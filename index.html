@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat Bot</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script src="socket.io-1.2.0.js"></script>
+        <script src="jquery-1.11.1.js"></script>
+               
+    </head>
+    <body>
+        <ul id="messages"></ul>
+        <span id="notifyUser"></span>
+        <form id="form" action="" onsubmit="return messageFunction();">
+            <input type="hidden" id="user" value="" />
+            <input type="text" id="msg" autocomplete="off" onkeyup="notifyTyping();" placeholder="Type your message here.." />
+            <input type="submit" id="button" value="Send" />
+        </form>
+        <script src="chat.js"></script>
+    </body> 
+</html>
